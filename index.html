@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div id="message"></div>
+    
+    <div id="wrapper">
+        <ul id="list">
+            
+
+        </ul>
+        <div class="action-btn-wrapper">
+            <button class="btn btn-create" type="submit">Create</button>
+        </div>
+
+    </div>
+
+    <div id="info-box" class="sidebox">
+        <button class="close-btn">x</button>
+        <h5 class="title">Yahoo</h5>
+        <table>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <div class="action-btn-wrapper">
+            <button class="btn btn-edit" type="submit">Edit</button>
+            <button class="btn btn-delete" type="submit">Delete</button>
+        </div>
+    </div>
+
+    <div id="form-wrapper" class="sidebox">
+        <button class="close-btn">x</button>
+        <h5 class="title">Create</h5>
+
+        <form action="" id="form">
+            <input type="hidden" name="password_id" id="password_id" />
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" name="title" id="title" />
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" name="username" id="username" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" />
+            </div>
+            <div class="form-group">
+                <label for="website">Website</label>
+                <input type="url" class="form-control" name="website" id="website" />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" name="phone" id="phone" />
+            </div>
+            <div class="form-group">
+                <label for="one_time_code">One Time Code</label>
+                <input type="text" class="form-control" name="one_time_code" id="one_time_code" />
+            </div>
+            <div class="form-group">
+                <label for="security_question">Security Question</label>
+                <input type="text" class="form-control" name="security_question" id="security_question" />
+            </div>
+            <div class="form-group">
+                <label for="security_answer">Security Answer</label>
+                <input type="text" class="form-control" name="security_answer" id="security_answer" />
+            </div>
+
+            <div class="action-btn-wrapper">
+                <button class="btn btn-save" type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

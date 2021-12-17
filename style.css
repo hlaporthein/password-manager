@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #e4fffd;
+}
+
+#wrapper {
+    background: #fff;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 12px 3px #e1dada;
+    margin: 100px auto;
+}
+
+#list {
+    list-style-type: none;
+    margin: 0 0 25px;
+    padding: 0;
+}
+
+#list li {
+    border-bottom: 1px solid #ddd;
+    padding: 13px 20px;
+    transition: all 0.4s ease-in;
+    text-indent: 0;
+    cursor: pointer;
+}
+
+#list li:hover {
+    border-bottom-color: #222;
+    text-indent: 15px;
+}
+/* information */
+.sidebox {
+    background: #fff;
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    right: -500%;
+    /* right: 0; */
+    height: 100%;
+    min-width: 320px;
+    transition: all 0.6s ease;
+    overflow-y: scroll;
+}
+
+.sidebox .title {
+    border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+}
+
+.sidebox table {}
+
+.sidebox table tr td {
+    padding: 10px;
+}
+.show-info #info-box {
+    right: 0;
+}
+/* close button */
+.close-btn {
+    background: #222;
+    color: #fff;
+    border: 0 none;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.btn {
+    background: #222;
+    border: 0 none;
+    color: #fff;
+    padding: 11px 10px;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.btn.btn-delete {
+    background: #cd3707;
+}
+.btn.btn-create {
+    background: #1a7;
+}
+
+/*  form */
+.show-form #form-wrapper {
+    right: 0;
+}
+.form-group {margin-bottom: 15px;}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    border: 2px solid #222;
+    padding: 8px 10px;
+    display: block;
+    width: 100%;
+}
+/* message */
+#message {
+    background: #1a7;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 3px;
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    margin-left: -100px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.show-message #message {
+    opacity: 1;
+    top: 27px;
+}
